@@ -1,9 +1,9 @@
 #  LAN File Transfer Application & Network Traffic Analysis via Wireshark
-[English Version](#english-version) | [Tiếng Việt](#tieng-viet)
+[English](#-english-version) | [Tiếng Việt](#-tiếng-việt)
 
 ---
 
-## English Version
+## 🇬🇧 English Version
 # Final Project — **Data Communications**  
 Faculty of Electronics and Telecommunications, University of Science (VNU-HCM)
 
@@ -139,7 +139,7 @@ Wireshark successfully captured the complete 3-step handshake procedure:
 * **Improve User Experience:** Develop a user-friendly GUI using MATLAB App Designer, while adding automatic reconnect (Retry) and **Resume** functionality for interrupted file transfers.
 ---
 
-## Tieng Viet
+## 🇻🇳 Tiếng Việt
 
 Đồ án kết thúc môn **Truyền thông dữ liệu** — Khoa Điện tử - Viễn thông, Trường Đại học Khoa học Tự nhiên (ĐHQG-HCM). 
 
