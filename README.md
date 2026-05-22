@@ -6,14 +6,14 @@
 ## 🇬🇧 English Version
 Final Project — **Data Communications**  Faculty of Electronics and Telecommunications, University of Science (VNU-HCM)
 
-This project successfully implemented a **Client-Server** system on the **MATLAB** platform for transferring multi-format files within a Local Area Network (LAN) using the **TCP/IP** protocol. In addition, **Wireshark** was utilized to monitor, capture, and perform in-depth analysis of packet structures at both the Transport Layer and Network Layer.
+This project successfully implemented a **Client-Server** system on the **MATLAB** platform for transferring multi-format files within a Local Area Network (LAN) using the **TCP/IP** protocol. In addition, **Wireshark** was utilized to monitor, capture and perform in-depth analysis of packet structures at both the Transport Layer and Network Layer.
 
 ---
 
 ## Team Members (Group 8 - Class 23DTV_CLC1)
 * **Tran Thanh Thinh** (Team Leader) — *Main responsibilities:* System architecture design, Socket programming in MATLAB, Wireshark packet configuration and analysis, technical report compilation.
 * **Nguyen Phuoc Dang Minh** — *Main responsibilities:* Content editing (PowerPoint + Word) and Wireshark testing execution.
-* **Nguyen Van Dat** — *Main responsibilities:* Presentation, Wireshark testing support, and PowerPoint report interface design.
+* **Nguyen Van Dat** — *Main responsibilities:* Presentation, Wireshark testing support and PowerPoint report interface design.
 
 ---
 
@@ -21,8 +21,8 @@ This project successfully implemented a **Client-Server** system on the **MATLAB
 
 The application operates based on a sequential **Client-Server** model to ensure centralized management and easy scalability:
 
-* **Client (Sender):** Responsible for initiating a TCP connection to the Server Socket. It reads the original file, performs data fragmentation, and transmits the binary byte stream through the network.
-* **Server (Receiver):** Continuously listens for incoming connections on a specified port. It receives the byte stream, parses the data according to the custom-defined protocol, reconstructs the file structure information, and restores the complete file onto disk storage.
+* **Client (Sender):** Responsible for initiating a TCP connection to the Server Socket. It reads the original file, performs data fragmentation and transmits the binary byte stream through the network.
+* **Server (Receiver):** Continuously listens for incoming connections on a specified port. It receives the byte stream, parses the data according to the custom-defined protocol, reconstructs the file structure information and restores the complete file onto disk storage.
 
 ### Custom Application Layer Protocol
 To solve the problem of identifying data boundaries in the continuous TCP stream (avoiding packet sticking and packet fragmentation issues), the team designed a custom message structure consisting of three main components:
@@ -117,13 +117,13 @@ Wireshark successfully captured the complete 3-step handshake procedure:
 | Evaluation Criteria | Actual Result | Technical Explanation |
 | :--- | :--- | :--- |
 | **Transmission Success Rate** | **100% achieved** within LAN | Stable Switch/Router-based connection with complete data integrity and no packet loss or corruption compared to the original file. |
-| **Multi-format File Support** | **Fully supported** | Thanks to the binary-byte handling mechanism at the Application Layer, the system smoothly processes text files (.txt, .doc), multimedia files (.jpg, .ppt), and source code files (.m, .py). |
+| **Multi-format File Support** | **Fully supported** | Thanks to the binary-byte handling mechanism at the Application Layer, the system smoothly processes text files (.txt, .doc), multimedia files (.jpg, .ppt) and source code files (.m, .py). |
 
 ### Advantages & Limitations
 
-* **Advantages:** Extremely high reliability by fully leveraging TCP features such as packet loss recovery and in-order delivery. The source code structure is concise, intuitive, and easy to deploy within a LAN environment.
+* **Advantages:** Extremely high reliability by fully leveraging TCP features such as packet loss recovery and in-order delivery. The source code structure is concise, intuitive and easy to deploy within a LAN environment.
 
-* **Technical Limitations:** Limited by single-threaded processing capability. The Server only supports sequential one-to-one communication, which may lead to bottlenecks under multiple simultaneous requests. Data transmission is performed in plain text without encryption standards such as SSL/TLS, and no graphical user interface (GUI) is currently implemented.
+* **Technical Limitations:** Limited by single-threaded processing capability. The Server only supports sequential one-to-one communication, which may lead to bottlenecks under multiple simultaneous requests. Data transmission is performed in plain text without encryption standards such as SSL/TLS and no graphical user interface (GUI) is currently implemented.
 
 ---
 
