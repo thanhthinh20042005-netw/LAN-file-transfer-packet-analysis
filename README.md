@@ -188,7 +188,7 @@ for i = 1:chunkSize:totalBytes
     write(t, FileData(i:endIdx)); % Bơm luồng byte nhị phân vào đường truyền
 end
 ```
-### Phía Client (Gửi dữ liệu)
+### Phía Server (Nhận dữ liệu)
 ```matlab
 % 1. Khởi tạo Server lắng nghe kết nối tại Port chỉ định
 server = tcpserver("0.0.0.0", 5001);
